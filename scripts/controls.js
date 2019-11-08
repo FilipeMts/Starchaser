@@ -38,6 +38,14 @@ class Controls {
                     playerShoots.play(); 
                     break; 
                 }
+                case 76: {                 
+                    e.preventDefault();
+                    this.game.bulletShoot = true; 
+                    this.game.bullets.push(new Bullet(this.game));                 
+                    playerShoots.currentTime = 0;
+                    playerShoots.play(); 
+                    break; 
+                }
                 case 32: {
                     if (this.game.gameEnds === true) {
                         this.game.resetGame();
@@ -72,7 +80,10 @@ class Controls {
                 this.game.bulletShoot = true; 
                 this.game.bullets.push(new Bullet(this.game));                 
                 playerShoots.currentTime = 0;
-                playerShoots.play();         
+                playerShoots.play();
+                if (this.game.gameEnds === true) {
+                    playerShoots.pause();
+                }         
             }    
         }) 
     }

@@ -36,7 +36,7 @@ class Game {
         this.enemy = new Enemy(this);
         this.enemies = [];        
         this.enemiesTimer = 0;
-        this.enemiesSpeed = 3000;
+        this.enemiesSpeed = 5000;
         this.enemiesKilled = 0;        
 
         this.up = false;
