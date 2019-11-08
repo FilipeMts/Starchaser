@@ -25,13 +25,20 @@ class Controls {
                     this.game.left = true;
                     break; 
                 }   
-                case 68:  {                 
+                case 68: {                 
                     e.preventDefault();
                     this.game.right = true
                     break; 
-                } 
-
-                case 32 : {
+                }
+                case 17: {                 
+                    e.preventDefault();
+                    this.game.bulletShoot = true; 
+                    this.game.bullets.push(new Bullet(this.game));                 
+                    playerShoots.currentTime = 0;
+                    playerShoots.play(); 
+                    break; 
+                }
+                case 32: {
                     if (this.game.gameEnds === true) {
                         this.game.resetGame();
                     }

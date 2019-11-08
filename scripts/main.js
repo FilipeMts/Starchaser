@@ -13,7 +13,8 @@ start.addEventListener('click', () => {
 });
 
 howText.addEventListener('click', () => {
-  document.querySelector('#start-menu').style.visibility = "hidden";
+  //document.querySelector('#start-menu').style.visibility = "hidden";
+  document.querySelector('#start-menu').style.display = "none";
   document.querySelector('#how-to').style.display = 'flex';
 });
 

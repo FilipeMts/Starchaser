@@ -262,7 +262,7 @@ class Game {
             this.background.vy = 5;
         }
 
-        if (this.hub.score >=43000) {
+        if (this.hub.score >= 4000) {
             this.hub.stage = 5;
             this.meteorSpeed = 250;
             this.enemiesSpeed = 500;
