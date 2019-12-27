@@ -1,4 +1,4 @@
-# Starchaser - a game for Ironhack Module 1
+# Starchaser - a space shooter
 
 Vertical shooter build with HTML Canvas, CSS and vanilla Javascript.
 
